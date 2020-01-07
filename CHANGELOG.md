@@ -1,3 +1,8 @@
-## [0.0.1] - TODO: Add release date.
+## [0.0.2] - Initial concepts
 
-* TODO: Describe initial release.
+* Add `ActionButton`, `Authenticator`, `Provider` and `Uesr`
+* Add tests for `User`
+
+## [0.0.1] - Initial release
+
+* Init project
