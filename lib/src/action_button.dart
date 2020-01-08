@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ActionButton extends StatelessWidget {
-  final Icon icon;
+  final Widget icon;
   final String text;
   final Color color;
   final Color textColor;

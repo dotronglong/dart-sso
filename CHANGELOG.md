@@ -1,3 +1,7 @@
+## [0.0.7] v0.0.7
+
+* Change action button icon's type to `Widget`
+
 ## [0.0.6] v0.0.6
 
 * Change signature of `Provider#use`
