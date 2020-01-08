@@ -4,7 +4,9 @@ import 'authenticator.dart';
 import 'user.dart';
 
 abstract class Provider {
-  List<Authenticator> _authenticators = List();
+  final List<Authenticator> _authenticators;
+
+  Provider([this._authenticators = const []]);
 
   /// Register authenticator
   void use(Authenticator authenticator) => _authenticators.add(authenticator);
