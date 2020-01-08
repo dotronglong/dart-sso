@@ -10,10 +10,10 @@ abstract class Provider {
   void use(Authenticator authenticator) => _authenticators.add(authenticator);
 
   /// Return list of action buttons
-  List<Widget> actions([Widget divider]) {
+  List<Widget> actions(BuildContext context, [Widget divider]) {
     List<Widget> actions = [];
     for (Authenticator authenticator in _authenticators) {
-      actions.add(authenticator.action());
+      actions.add(authenticator.action(context));
       if (divider != null) {
         actions.add(divider);
       }

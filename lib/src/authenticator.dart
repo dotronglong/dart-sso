@@ -4,8 +4,8 @@ import 'package:flutter/widgets.dart';
 import 'user.dart';
 
 abstract class Authenticator {
-  /// Returns action button
-  Widget action();
+  /// Returns a widget builder for action button
+  WidgetBuilder get action;
 
   /// Authenticate and return user if success
   ///

@@ -1,3 +1,8 @@
+## [0.0.3] - Change authenticator
+
+* Change return type of `action`
+* Use getter instead of method
+
 ## [0.0.2] - Initial concepts
 
 * Add `ActionButton`, `Authenticator`, `Provider` and `Uesr`
