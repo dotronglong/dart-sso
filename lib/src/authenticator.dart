@@ -10,5 +10,5 @@ abstract class Authenticator {
   /// Authenticate and return user if success
   ///
   /// Returns null on failure
-  Future<User> authenticate({Map parameters});
+  Future<User> authenticate([Map parameters]);
 }

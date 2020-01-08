@@ -1,3 +1,7 @@
+## [0.0.4] - Change authenticator
+
+* Change `parameters` to optional argument
+
 ## [0.0.3] - Change authenticator
 
 * Change return type of `action`
