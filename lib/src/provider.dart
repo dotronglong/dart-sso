@@ -4,12 +4,19 @@ import 'authenticator.dart';
 import 'user.dart';
 
 abstract class Provider {
+  Widget get header;
+
+  ThemeData get theme;
+
   final List<Authenticator> _authenticators;
 
   Provider([this._authenticators = const []]);
 
   /// Register authenticator
-  void use(Authenticator authenticator) => _authenticators.add(authenticator);
+  Provider use(Authenticator authenticator) {
+    _authenticators.add(authenticator);
+    return this;
+  }
 
   /// Return list of action buttons
   List<Widget> actions(BuildContext context, [Widget divider]) {

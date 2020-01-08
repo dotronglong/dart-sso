@@ -1,3 +1,8 @@
+## [0.0.6] v0.0.6
+
+* Change signature of `Provider#use`
+* Add theme and header to `Provider`
+
 ## [0.0.5] - v0.0.5
 
 * Add default constructor for `Provider`
