@@ -10,7 +10,7 @@ abstract class Provider {
 
   ThemeData get theme;
 
-  Notifier get notifier;
+  Notifier get notifier => Notifier();
 
   final List<Authenticator> _authenticators = List();
 

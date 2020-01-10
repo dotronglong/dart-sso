@@ -1,3 +1,7 @@
+## [0.1.1] v0.1.1
+
+* Set default notifier for provider
+
 ## [0.1.0] v0.1.0
 
 * Add `Notifier` and `WillNotify`

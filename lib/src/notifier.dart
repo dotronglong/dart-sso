@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 
-abstract class Notifier {
+class Notifier {
   /// Allow to notify user
   ///
   /// For instance, show an error, message or an email
