@@ -40,5 +40,6 @@ abstract class Provider {
   /// Allow to notify user
   ///
   /// For instance, show an error, message or an email
-  void notify(String message, [Map parameters]) => print(message);
+  void notify(BuildContext context, String message, [Map parameters]) =>
+      print(message);
 }
