@@ -1,3 +1,8 @@
+## [0.1.0] v0.1.0
+
+* Add `Notifier` and `WillNotify`
+* Modified constructor of `Provider`
+
 ## [0.0.9] v0.0.9
 
 * Improve `Provider#notify`

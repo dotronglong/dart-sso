@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'authenticator.dart';
+import 'mixin/will_notify.dart';
+import 'notifier.dart';
 import 'user.dart';
 
 abstract class Provider {
@@ -8,12 +10,24 @@ abstract class Provider {
 
   ThemeData get theme;
 
-  final List<Authenticator> _authenticators;
+  Notifier get notifier;
 
-  Provider([this._authenticators = const []]);
+  final List<Authenticator> _authenticators = List();
+
+  /// Construct Provider
+  ///
+  /// Receives a list of authenticators as argument
+  Provider([List<Authenticator> authenticators = const []]) {
+    for (Authenticator authenticator in authenticators) {
+      this.use(authenticator);
+    }
+  }
 
   /// Register authenticator
   Provider use(Authenticator authenticator) {
+    if (authenticator is WillNotify) {
+      (authenticator as WillNotify).notifier = notifier;
+    }
     _authenticators.add(authenticator);
     return this;
   }
@@ -36,10 +50,4 @@ abstract class Provider {
 
   /// Stop session, log user out
   Future<void> stop();
-
-  /// Allow to notify user
-  ///
-  /// For instance, show an error, message or an email
-  void notify(BuildContext context, String message, [Map parameters]) =>
-      print(message);
 }

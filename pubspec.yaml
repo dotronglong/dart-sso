@@ -1,6 +1,6 @@
 name: sso
 description: A simple abstract single sign-on library for Dart
-version: 0.0.9
+version: 0.1.0
 author: Long Do <me@dotronglong.com>
 homepage: https://github.com/dotronglong/dart-sso
 
