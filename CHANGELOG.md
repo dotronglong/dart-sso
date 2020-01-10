@@ -1,3 +1,8 @@
+## [0.1.2] v0.1.2
+
+* Add default notifier for `WillNotify`
+* Add `notify` to `WillNotify` as a proxy method
+
 ## [0.1.1] v0.1.1
 
 * Set default notifier for provider
