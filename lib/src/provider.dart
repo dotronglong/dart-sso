@@ -36,4 +36,9 @@ abstract class Provider {
 
   /// Stop session, log user out
   Future<void> stop();
+
+  /// Allow to notify user
+  ///
+  /// For instance, show an error, message or an email
+  void notify(String message, [Map parameters]) => print(message);
 }
