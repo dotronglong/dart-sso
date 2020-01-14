@@ -1,3 +1,10 @@
+## [0.2.0] v0.2.0
+
+* Refactor sso
+* Add `UserConverter` and `WillConvertUser`
+* Move `ActionButton` to `identity` package
+* Remove `header` and `theme` in `Provider`
+
 ## [0.1.2] v0.1.2
 
 * Add default notifier for `WillNotify`
